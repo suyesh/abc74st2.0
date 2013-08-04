@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @admin.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @admin.last_name %>
+</p>
+
+<p>
+  <strong>Store number:</strong>
+  <%= @admin.store_number %>
+</p>
+
+<p>
+  <strong>Cell number:</strong>
+  <%= @admin.cell_number %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @admin.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @admin.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @admin.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @admin.zip %>
+</p>
+
+<p>
+  <strong>Store name:</strong>
+  <%= @admin.store_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @admin.email %>
+</p>
+
+<p>
+  <strong>Autorised person:</strong>
+  <%= @admin.autorised_person %>
+</p>
+
+<%= link_to 'Edit', edit_admin_path(@admin) %> |
+<%= link_to 'Back', admins_path %>

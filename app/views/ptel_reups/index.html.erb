@@ -1,0 +1,39 @@
+<h1>Listing ptel_reups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pone number</th>
+      <th>Fourty plan</th>
+      <th>Fifty plan</th>
+      <th>Real paygo</th>
+      <th>Paygo amount</th>
+      <th>Admin</th>
+      <th>Wallet</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ptel_reups.each do |ptel_reup| %>
+      <tr>
+        <td><%= ptel_reup.pone_number %></td>
+        <td><%= ptel_reup.fourty_plan %></td>
+        <td><%= ptel_reup.fifty_plan %></td>
+        <td><%= ptel_reup.real_paygo %></td>
+        <td><%= ptel_reup.paygo_amount %></td>
+        <td><%= ptel_reup.admin_id %></td>
+        <td><%= ptel_reup.wallet_id %></td>
+        <td><%= link_to 'Show', ptel_reup %></td>
+        <td><%= link_to 'Edit', edit_ptel_reup_path(ptel_reup) %></td>
+        <td><%= link_to 'Destroy', ptel_reup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ptel reup', new_ptel_reup_path %>

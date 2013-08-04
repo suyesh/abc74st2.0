@@ -1,0 +1,2 @@
+module UltraPortinsHelper
+end

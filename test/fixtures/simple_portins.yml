@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sim_number: MyString
+  existing_phone: MyString
+  zip_code: MyString
+  current_service_provider: MyString
+  old_account_number: MyString
+  old_account_password: MyString
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip_code: MyString
+  twentyfive_plan: false
+  fourty_plan: false
+  fifty_plan: false
+  sixty_plan: false
+  seventy_plan: false
+  admin_id: 1
+  wallet_id: 1
+
+two:
+  sim_number: MyString
+  existing_phone: MyString
+  zip_code: MyString
+  current_service_provider: MyString
+  old_account_number: MyString
+  old_account_password: MyString
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip_code: MyString
+  twentyfive_plan: false
+  fourty_plan: false
+  fifty_plan: false
+  sixty_plan: false
+  seventy_plan: false
+  admin_id: 1
+  wallet_id: 1

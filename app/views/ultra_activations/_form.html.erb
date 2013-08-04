@@ -1,0 +1,65 @@
+<%= form_for(@ultra_activation) do |f| %>
+  <% if @ultra_activation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ultra_activation.errors.count, "error") %> prohibited this ultra_activation from being saved:</h2>
+
+      <ul>
+      <% @ultra_activation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sim_number %><br>
+    <%= f.text_field :sim_number %>
+  </div>
+  <div class="field">
+    <%= f.label :zip_code %><br>
+    <%= f.text_field :zip_code %>
+  </div>
+  <div class="field">
+    <%= f.label :ninteen_plan %><br>
+    <%= f.check_box :ninteen_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :twentynine_plan %><br>
+    <%= f.check_box :twentynine_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :tirtynine_plan %><br>
+    <%= f.check_box :tirtynine_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :fortynine_plan %><br>
+    <%= f.check_box :fortynine_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :fiftynine_plan %><br>
+    <%= f.check_box :fiftynine_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :admin_id %><br>
+    <%= f.number_field :admin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :wallet_id %><br>
+    <%= f.number_field :wallet_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

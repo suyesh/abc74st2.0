@@ -1,0 +1,63 @@
+<h1>Listing ptel_portins</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Existing number</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Contact number</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip code</th>
+      <th>Email</th>
+      <th>Old service provider</th>
+      <th>Old account</th>
+      <th>Old account password</th>
+      <th>Fourtyplan</th>
+      <th>Fiftyplan</th>
+      <th>Real paygo</th>
+      <th>Paygo amount</th>
+      <th>Comments</th>
+      <th>Wallet</th>
+      <th>Admin</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ptel_portins.each do |ptel_portin| %>
+      <tr>
+        <td><%= ptel_portin.existing_number %></td>
+        <td><%= ptel_portin.first_name %></td>
+        <td><%= ptel_portin.last_name %></td>
+        <td><%= ptel_portin.contact_number %></td>
+        <td><%= ptel_portin.address %></td>
+        <td><%= ptel_portin.city %></td>
+        <td><%= ptel_portin.state %></td>
+        <td><%= ptel_portin.zip_code %></td>
+        <td><%= ptel_portin.email %></td>
+        <td><%= ptel_portin.old_service_provider %></td>
+        <td><%= ptel_portin.old_account_id %></td>
+        <td><%= ptel_portin.old_account_password %></td>
+        <td><%= ptel_portin.fourtyplan %></td>
+        <td><%= ptel_portin.fiftyplan %></td>
+        <td><%= ptel_portin.real_paygo %></td>
+        <td><%= ptel_portin.paygo_amount %></td>
+        <td><%= ptel_portin.comments %></td>
+        <td><%= ptel_portin.wallet_id %></td>
+        <td><%= ptel_portin.admin_id %></td>
+        <td><%= link_to 'Show', ptel_portin %></td>
+        <td><%= link_to 'Edit', edit_ptel_portin_path(ptel_portin) %></td>
+        <td><%= link_to 'Destroy', ptel_portin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ptel portin', new_ptel_portin_path %>

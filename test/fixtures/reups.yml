@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  phone_number: MyString
+  twentyfive_plan: false
+  fourty_plan: false
+  fifty_plan: false
+  sixty_plan: false
+  seventy_plan: false
+  change_plan: false
+  admin_id: 1
+  wallet_id: 1
+
+two:
+  phone_number: MyString
+  twentyfive_plan: false
+  fourty_plan: false
+  fifty_plan: false
+  sixty_plan: false
+  seventy_plan: false
+  change_plan: false
+  admin_id: 1
+  wallet_id: 1

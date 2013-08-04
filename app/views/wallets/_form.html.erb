@@ -1,0 +1,121 @@
+<%= form_for(@wallet) do |f| %>
+  <% if @wallet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wallet.errors.count, "error") %> prohibited this wallet from being saved:</h2>
+
+      <ul>
+      <% @wallet.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :balance %><br>
+    <%= f.number_field :balance %>
+  </div>
+  <div class="field">
+    <%= f.label :refunds %><br>
+    <%= f.number_field :refunds %>
+  </div>
+  <div class="field">
+    <%= f.label :income_from_activations %><br>
+    <%= f.number_field :income_from_activations %>
+  </div>
+  <div class="field">
+    <%= f.label :income_from_reup %><br>
+    <%= f.number_field :income_from_reup %>
+  </div>
+  <div class="field">
+    <%= f.label :income_from_international_recharge %><br>
+    <%= f.number_field :income_from_international_recharge %>
+  </div>
+  <div class="field">
+    <%= f.label :unlocking %><br>
+    <%= f.number_field :unlocking %>
+  </div>
+  <div class="field">
+    <%= f.label :admin_id %><br>
+    <%= f.number_field :admin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ptel_activation_id %><br>
+    <%= f.number_field :ptel_activation_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ptel_portin_id %><br>
+    <%= f.number_field :ptel_portin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ptel_reup_id %><br>
+    <%= f.number_field :ptel_reup_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ultra_activation_id %><br>
+    <%= f.number_field :ultra_activation_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ultra_portin_id %><br>
+    <%= f.number_field :ultra_portin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ultra_reup_id %><br>
+    <%= f.number_field :ultra_reup_id %>
+  </div>
+  <div class="field">
+    <%= f.label :simple_activation_id %><br>
+    <%= f.number_field :simple_activation_id %>
+  </div>
+  <div class="field">
+    <%= f.label :simple_portin_id %><br>
+    <%= f.number_field :simple_portin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :simple_reup_id %><br>
+    <%= f.number_field :simple_reup_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lyca_activation_id %><br>
+    <%= f.number_field :lyca_activation_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lyca_portin_id %><br>
+    <%= f.number_field :lyca_portin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lyca_reup_id %><br>
+    <%= f.number_field :lyca_reup_id %>
+  </div>
+  <div class="field">
+    <%= f.label :h20_activation_id %><br>
+    <%= f.number_field :h20_activation_id %>
+  </div>
+  <div class="field">
+    <%= f.label :h20_portin_id %><br>
+    <%= f.number_field :h20_portin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :h20_reup_id %><br>
+    <%= f.number_field :h20_reup_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tmobile_activation_id %><br>
+    <%= f.number_field :tmobile_activation_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tmobile_portin_id %><br>
+    <%= f.number_field :tmobile_portin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tmobile_reup_id %><br>
+    <%= f.number_field :tmobile_reup_id %>
+  </div>
+  <div class="field">
+    <%= f.label :unlocking_id %><br>
+    <%= f.number_field :unlocking_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

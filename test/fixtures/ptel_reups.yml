@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pone_number: MyString
+  fourty_plan: false
+  fifty_plan: false
+  real_paygo: false
+  paygo_amount: 1
+  admin_id: 1
+  wallet_id: 1
+
+two:
+  pone_number: MyString
+  fourty_plan: false
+  fifty_plan: false
+  real_paygo: false
+  paygo_amount: 1
+  admin_id: 1
+  wallet_id: 1

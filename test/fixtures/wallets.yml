@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  balance: 1
+  refunds: 1
+  income_from_activations: 1
+  income_from_reup: 1
+  income_from_international_recharge: 1
+  unlocking: 1
+  admin_id: 1
+  ptel_activation_id: 1
+  ptel_portin_id: 1
+  ptel_reup_id: 1
+  ultra_activation_id: 1
+  ultra_portin_id: 1
+  ultra_reup_id: 1
+  simple_activation_id: 1
+  simple_portin_id: 1
+  simple_reup_id: 1
+  lyca_activation_id: 1
+  lyca_portin_id: 1
+  lyca_reup_id: 1
+  h20_activation_id: 1
+  h20_portin_id: 1
+  h20_reup_id: 1
+  tmobile_activation_id: 1
+  tmobile_portin_id: 1
+  tmobile_reup_id: 1
+  unlocking_id: 1
+
+two:
+  balance: 1
+  refunds: 1
+  income_from_activations: 1
+  income_from_reup: 1
+  income_from_international_recharge: 1
+  unlocking: 1
+  admin_id: 1
+  ptel_activation_id: 1
+  ptel_portin_id: 1
+  ptel_reup_id: 1
+  ultra_activation_id: 1
+  ultra_portin_id: 1
+  ultra_reup_id: 1
+  simple_activation_id: 1
+  simple_portin_id: 1
+  simple_reup_id: 1
+  lyca_activation_id: 1
+  lyca_portin_id: 1
+  lyca_reup_id: 1
+  h20_activation_id: 1
+  h20_portin_id: 1
+  h20_reup_id: 1
+  tmobile_activation_id: 1
+  tmobile_portin_id: 1
+  tmobile_reup_id: 1
+  unlocking_id: 1

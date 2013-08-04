@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pone number:</strong>
+  <%= @ptel_reup.pone_number %>
+</p>
+
+<p>
+  <strong>Fourty plan:</strong>
+  <%= @ptel_reup.fourty_plan %>
+</p>
+
+<p>
+  <strong>Fifty plan:</strong>
+  <%= @ptel_reup.fifty_plan %>
+</p>
+
+<p>
+  <strong>Real paygo:</strong>
+  <%= @ptel_reup.real_paygo %>
+</p>
+
+<p>
+  <strong>Paygo amount:</strong>
+  <%= @ptel_reup.paygo_amount %>
+</p>
+
+<p>
+  <strong>Admin:</strong>
+  <%= @ptel_reup.admin_id %>
+</p>
+
+<p>
+  <strong>Wallet:</strong>
+  <%= @ptel_reup.wallet_id %>
+</p>
+
+<%= link_to 'Edit', edit_ptel_reup_path(@ptel_reup) %> |
+<%= link_to 'Back', ptel_reups_path %>

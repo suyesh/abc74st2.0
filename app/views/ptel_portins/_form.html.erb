@@ -1,0 +1,93 @@
+<%= form_for(@ptel_portin) do |f| %>
+  <% if @ptel_portin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ptel_portin.errors.count, "error") %> prohibited this ptel_portin from being saved:</h2>
+
+      <ul>
+      <% @ptel_portin.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :existing_number %><br>
+    <%= f.text_field :existing_number %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_number %><br>
+    <%= f.text_field :contact_number %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :zip_code %><br>
+    <%= f.text_field :zip_code %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :old_service_provider %><br>
+    <%= f.text_field :old_service_provider %>
+  </div>
+  <div class="field">
+    <%= f.label :old_account_id %><br>
+    <%= f.text_field :old_account_id %>
+  </div>
+  <div class="field">
+    <%= f.label :old_account_password %><br>
+    <%= f.text_field :old_account_password %>
+  </div>
+  <div class="field">
+    <%= f.label :fourtyplan %><br>
+    <%= f.check_box :fourtyplan %>
+  </div>
+  <div class="field">
+    <%= f.label :fiftyplan %><br>
+    <%= f.check_box :fiftyplan %>
+  </div>
+  <div class="field">
+    <%= f.label :real_paygo %><br>
+    <%= f.check_box :real_paygo %>
+  </div>
+  <div class="field">
+    <%= f.label :paygo_amount %><br>
+    <%= f.number_field :paygo_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br>
+    <%= f.text_area :comments %>
+  </div>
+  <div class="field">
+    <%= f.label :wallet_id %><br>
+    <%= f.number_field :wallet_id %>
+  </div>
+  <div class="field">
+    <%= f.label :admin_id %><br>
+    <%= f.number_field :admin_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

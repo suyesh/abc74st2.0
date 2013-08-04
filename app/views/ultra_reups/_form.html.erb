@@ -1,0 +1,57 @@
+<%= form_for(@ultra_reup) do |f| %>
+  <% if @ultra_reup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ultra_reup.errors.count, "error") %> prohibited this ultra_reup from being saved:</h2>
+
+      <ul>
+      <% @ultra_reup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :phone_number %><br>
+    <%= f.text_field :phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :nineteen_plan %><br>
+    <%= f.check_box :nineteen_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :twentynine_plan %><br>
+    <%= f.check_box :twentynine_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :thirtynine_plan %><br>
+    <%= f.check_box :thirtynine_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :fourtynine_plan %><br>
+    <%= f.check_box :fourtynine_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :fiftynine_plan %><br>
+    <%= f.check_box :fiftynine_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :other_amount %><br>
+    <%= f.check_box :other_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br>
+    <%= f.number_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :admin_id %><br>
+    <%= f.number_field :admin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :wallet_id %><br>
+    <%= f.number_field :wallet_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

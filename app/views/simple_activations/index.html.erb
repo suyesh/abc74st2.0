@@ -1,0 +1,43 @@
+<h1>Listing simple_activations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sim number</th>
+      <th>Zip code</th>
+      <th>Twentyfive plan</th>
+      <th>Fourty plan</th>
+      <th>Fifty plan</th>
+      <th>Sixty plan</th>
+      <th>Ild</th>
+      <th>Admin</th>
+      <th>Wallet</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @simple_activations.each do |simple_activation| %>
+      <tr>
+        <td><%= simple_activation.sim_number %></td>
+        <td><%= simple_activation.zip_code %></td>
+        <td><%= simple_activation.twentyfive_plan %></td>
+        <td><%= simple_activation.fourty_plan %></td>
+        <td><%= simple_activation.fifty_plan %></td>
+        <td><%= simple_activation.sixty_plan %></td>
+        <td><%= simple_activation.ild %></td>
+        <td><%= simple_activation.admin_id %></td>
+        <td><%= simple_activation.wallet_id %></td>
+        <td><%= link_to 'Show', simple_activation %></td>
+        <td><%= link_to 'Edit', edit_simple_activation_path(simple_activation) %></td>
+        <td><%= link_to 'Destroy', simple_activation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Simple activation', new_simple_activation_path %>

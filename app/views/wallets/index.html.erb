@@ -1,0 +1,77 @@
+<h1>Listing wallets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Balance</th>
+      <th>Refunds</th>
+      <th>Income from activations</th>
+      <th>Income from reup</th>
+      <th>Income from international recharge</th>
+      <th>Unlocking</th>
+      <th>Admin</th>
+      <th>Ptel activation</th>
+      <th>Ptel portin</th>
+      <th>Ptel reup</th>
+      <th>Ultra activation</th>
+      <th>Ultra portin</th>
+      <th>Ultra reup</th>
+      <th>Simple activation</th>
+      <th>Simple portin</th>
+      <th>Simple reup</th>
+      <th>Lyca activation</th>
+      <th>Lyca portin</th>
+      <th>Lyca reup</th>
+      <th>H20 activation</th>
+      <th>H20 portin</th>
+      <th>H20 reup</th>
+      <th>Tmobile activation</th>
+      <th>Tmobile portin</th>
+      <th>Tmobile reup</th>
+      <th>Unlocking</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wallets.each do |wallet| %>
+      <tr>
+        <td><%= wallet.balance %></td>
+        <td><%= wallet.refunds %></td>
+        <td><%= wallet.income_from_activations %></td>
+        <td><%= wallet.income_from_reup %></td>
+        <td><%= wallet.income_from_international_recharge %></td>
+        <td><%= wallet.unlocking %></td>
+        <td><%= wallet.admin_id %></td>
+        <td><%= wallet.ptel_activation_id %></td>
+        <td><%= wallet.ptel_portin_id %></td>
+        <td><%= wallet.ptel_reup_id %></td>
+        <td><%= wallet.ultra_activation_id %></td>
+        <td><%= wallet.ultra_portin_id %></td>
+        <td><%= wallet.ultra_reup_id %></td>
+        <td><%= wallet.simple_activation_id %></td>
+        <td><%= wallet.simple_portin_id %></td>
+        <td><%= wallet.simple_reup_id %></td>
+        <td><%= wallet.lyca_activation_id %></td>
+        <td><%= wallet.lyca_portin_id %></td>
+        <td><%= wallet.lyca_reup_id %></td>
+        <td><%= wallet.h20_activation_id %></td>
+        <td><%= wallet.h20_portin_id %></td>
+        <td><%= wallet.h20_reup_id %></td>
+        <td><%= wallet.tmobile_activation_id %></td>
+        <td><%= wallet.tmobile_portin_id %></td>
+        <td><%= wallet.tmobile_reup_id %></td>
+        <td><%= wallet.unlocking_id %></td>
+        <td><%= link_to 'Show', wallet %></td>
+        <td><%= link_to 'Edit', edit_wallet_path(wallet) %></td>
+        <td><%= link_to 'Destroy', wallet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wallet', new_wallet_path %>

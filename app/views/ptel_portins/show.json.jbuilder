@@ -1,0 +1,1 @@
+json.extract! @ptel_portin, :existing_number, :first_name, :last_name, :contact_number, :address, :city, :state, :zip_code, :email, :old_service_provider, :old_account_id, :old_account_password, :fourtyplan, :fiftyplan, :real_paygo, :paygo_amount, :comments, :wallet_id, :admin_id, :created_at, :updated_at

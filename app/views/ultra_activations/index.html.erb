@@ -1,0 +1,49 @@
+<h1>Listing ultra_activations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sim number</th>
+      <th>Zip code</th>
+      <th>Ninteen plan</th>
+      <th>Twentynine plan</th>
+      <th>Tirtynine plan</th>
+      <th>Fortynine plan</th>
+      <th>Fiftynine plan</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Admin</th>
+      <th>Wallet</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ultra_activations.each do |ultra_activation| %>
+      <tr>
+        <td><%= ultra_activation.sim_number %></td>
+        <td><%= ultra_activation.zip_code %></td>
+        <td><%= ultra_activation.ninteen_plan %></td>
+        <td><%= ultra_activation.twentynine_plan %></td>
+        <td><%= ultra_activation.tirtynine_plan %></td>
+        <td><%= ultra_activation.fortynine_plan %></td>
+        <td><%= ultra_activation.fiftynine_plan %></td>
+        <td><%= ultra_activation.first_name %></td>
+        <td><%= ultra_activation.last_name %></td>
+        <td><%= ultra_activation.email %></td>
+        <td><%= ultra_activation.admin_id %></td>
+        <td><%= ultra_activation.wallet_id %></td>
+        <td><%= link_to 'Show', ultra_activation %></td>
+        <td><%= link_to 'Edit', edit_ultra_activation_path(ultra_activation) %></td>
+        <td><%= link_to 'Destroy', ultra_activation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ultra activation', new_ultra_activation_path %>

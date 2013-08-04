@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  existing_number: MyString
+  first_name: MyString
+  last_name: MyString
+  contact_number: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip_code: MyString
+  email: MyString
+  old_service_provider: MyString
+  old_account_id: MyString
+  old_account_password: MyString
+  fourtyplan: false
+  fiftyplan: false
+  real_paygo: false
+  paygo_amount: 1
+  comments: MyText
+  wallet_id: 1
+  admin_id: 1
+
+two:
+  existing_number: MyString
+  first_name: MyString
+  last_name: MyString
+  contact_number: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip_code: MyString
+  email: MyString
+  old_service_provider: MyString
+  old_account_id: MyString
+  old_account_password: MyString
+  fourtyplan: false
+  fiftyplan: false
+  real_paygo: false
+  paygo_amount: 1
+  comments: MyText
+  wallet_id: 1
+  admin_id: 1

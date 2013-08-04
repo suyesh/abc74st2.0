@@ -1,0 +1,45 @@
+<%= form_for(@ptel_reup) do |f| %>
+  <% if @ptel_reup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ptel_reup.errors.count, "error") %> prohibited this ptel_reup from being saved:</h2>
+
+      <ul>
+      <% @ptel_reup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pone_number %><br>
+    <%= f.text_field :pone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :fourty_plan %><br>
+    <%= f.check_box :fourty_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :fifty_plan %><br>
+    <%= f.check_box :fifty_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :real_paygo %><br>
+    <%= f.check_box :real_paygo %>
+  </div>
+  <div class="field">
+    <%= f.label :paygo_amount %><br>
+    <%= f.number_field :paygo_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :admin_id %><br>
+    <%= f.number_field :admin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :wallet_id %><br>
+    <%= f.number_field :wallet_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

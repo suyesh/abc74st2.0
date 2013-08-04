@@ -1,0 +1,65 @@
+<h1>Listing simple_portins</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sim number</th>
+      <th>Existing phone</th>
+      <th>Zip code</th>
+      <th>Current service provider</th>
+      <th>Old account number</th>
+      <th>Old account password</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip code</th>
+      <th>Twentyfive plan</th>
+      <th>Fourty plan</th>
+      <th>Fifty plan</th>
+      <th>Sixty plan</th>
+      <th>Seventy plan</th>
+      <th>Admin</th>
+      <th>Wallet</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @simple_portins.each do |simple_portin| %>
+      <tr>
+        <td><%= simple_portin.sim_number %></td>
+        <td><%= simple_portin.existing_phone %></td>
+        <td><%= simple_portin.zip_code %></td>
+        <td><%= simple_portin.current_service_provider %></td>
+        <td><%= simple_portin.old_account_number %></td>
+        <td><%= simple_portin.old_account_password %></td>
+        <td><%= simple_portin.first_name %></td>
+        <td><%= simple_portin.last_name %></td>
+        <td><%= simple_portin.email %></td>
+        <td><%= simple_portin.address %></td>
+        <td><%= simple_portin.city %></td>
+        <td><%= simple_portin.state %></td>
+        <td><%= simple_portin.zip_code %></td>
+        <td><%= simple_portin.twentyfive_plan %></td>
+        <td><%= simple_portin.fourty_plan %></td>
+        <td><%= simple_portin.fifty_plan %></td>
+        <td><%= simple_portin.sixty_plan %></td>
+        <td><%= simple_portin.seventy_plan %></td>
+        <td><%= simple_portin.admin_id %></td>
+        <td><%= simple_portin.wallet_id %></td>
+        <td><%= link_to 'Show', simple_portin %></td>
+        <td><%= link_to 'Edit', edit_simple_portin_path(simple_portin) %></td>
+        <td><%= link_to 'Destroy', simple_portin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Simple portin', new_simple_portin_path %>

@@ -1,0 +1,57 @@
+<h1>Listing ultra_portins</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sim number</th>
+      <th>Zip code</th>
+      <th>Ninteen plan</th>
+      <th>Twentynine plan</th>
+      <th>Tirtynine plan</th>
+      <th>Fortynine plan</th>
+      <th>Fiftynine plan</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Old number</th>
+      <th>Account no</th>
+      <th>Zip code</th>
+      <th>Old password</th>
+      <th>Admin</th>
+      <th>Wallet</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ultra_portins.each do |ultra_portin| %>
+      <tr>
+        <td><%= ultra_portin.sim_number %></td>
+        <td><%= ultra_portin.zip_code %></td>
+        <td><%= ultra_portin.ninteen_plan %></td>
+        <td><%= ultra_portin.twentynine_plan %></td>
+        <td><%= ultra_portin.tirtynine_plan %></td>
+        <td><%= ultra_portin.fortynine_plan %></td>
+        <td><%= ultra_portin.fiftynine_plan %></td>
+        <td><%= ultra_portin.first_name %></td>
+        <td><%= ultra_portin.last_name %></td>
+        <td><%= ultra_portin.email %></td>
+        <td><%= ultra_portin.old_number %></td>
+        <td><%= ultra_portin.account_no %></td>
+        <td><%= ultra_portin.zip_code %></td>
+        <td><%= ultra_portin.old_password %></td>
+        <td><%= ultra_portin.admin_id %></td>
+        <td><%= ultra_portin.wallet_id %></td>
+        <td><%= link_to 'Show', ultra_portin %></td>
+        <td><%= link_to 'Edit', edit_ultra_portin_path(ultra_portin) %></td>
+        <td><%= link_to 'Destroy', ultra_portin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ultra portin', new_ultra_portin_path %>

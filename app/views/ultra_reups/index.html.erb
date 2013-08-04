@@ -1,0 +1,45 @@
+<h1>Listing ultra_reups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Phone number</th>
+      <th>Nineteen plan</th>
+      <th>Twentynine plan</th>
+      <th>Thirtynine plan</th>
+      <th>Fourtynine plan</th>
+      <th>Fiftynine plan</th>
+      <th>Other amount</th>
+      <th>Amount</th>
+      <th>Admin</th>
+      <th>Wallet</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ultra_reups.each do |ultra_reup| %>
+      <tr>
+        <td><%= ultra_reup.phone_number %></td>
+        <td><%= ultra_reup.nineteen_plan %></td>
+        <td><%= ultra_reup.twentynine_plan %></td>
+        <td><%= ultra_reup.thirtynine_plan %></td>
+        <td><%= ultra_reup.fourtynine_plan %></td>
+        <td><%= ultra_reup.fiftynine_plan %></td>
+        <td><%= ultra_reup.other_amount %></td>
+        <td><%= ultra_reup.amount %></td>
+        <td><%= ultra_reup.admin_id %></td>
+        <td><%= ultra_reup.wallet_id %></td>
+        <td><%= link_to 'Show', ultra_reup %></td>
+        <td><%= link_to 'Edit', edit_ultra_reup_path(ultra_reup) %></td>
+        <td><%= link_to 'Destroy', ultra_reup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ultra reup', new_ultra_reup_path %>

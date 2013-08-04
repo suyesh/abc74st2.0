@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sim_number: MyString
+  zip_code: MyString
+  ninteen_plan: false
+  twentynine_plan: false
+  tirtynine_plan: false
+  fortynine_plan: false
+  fiftynine_plan: false
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  admin_id: 1
+  wallet_id: 1
+
+two:
+  sim_number: MyString
+  zip_code: MyString
+  ninteen_plan: false
+  twentynine_plan: false
+  tirtynine_plan: false
+  fortynine_plan: false
+  fiftynine_plan: false
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  admin_id: 1
+  wallet_id: 1

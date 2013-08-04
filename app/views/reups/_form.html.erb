@@ -1,0 +1,53 @@
+<%= form_for(@reup) do |f| %>
+  <% if @reup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reup.errors.count, "error") %> prohibited this reup from being saved:</h2>
+
+      <ul>
+      <% @reup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :phone_number %><br>
+    <%= f.text_field :phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :twentyfive_plan %><br>
+    <%= f.check_box :twentyfive_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :fourty_plan %><br>
+    <%= f.check_box :fourty_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :fifty_plan %><br>
+    <%= f.check_box :fifty_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :sixty_plan %><br>
+    <%= f.check_box :sixty_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :seventy_plan %><br>
+    <%= f.check_box :seventy_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :change_plan %><br>
+    <%= f.check_box :change_plan %>
+  </div>
+  <div class="field">
+    <%= f.label :admin_id %><br>
+    <%= f.number_field :admin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :wallet_id %><br>
+    <%= f.number_field :wallet_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

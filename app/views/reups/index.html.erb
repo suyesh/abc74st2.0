@@ -1,0 +1,43 @@
+<h1>Listing reups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Phone number</th>
+      <th>Twentyfive plan</th>
+      <th>Fourty plan</th>
+      <th>Fifty plan</th>
+      <th>Sixty plan</th>
+      <th>Seventy plan</th>
+      <th>Change plan</th>
+      <th>Admin</th>
+      <th>Wallet</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reups.each do |reup| %>
+      <tr>
+        <td><%= reup.phone_number %></td>
+        <td><%= reup.twentyfive_plan %></td>
+        <td><%= reup.fourty_plan %></td>
+        <td><%= reup.fifty_plan %></td>
+        <td><%= reup.sixty_plan %></td>
+        <td><%= reup.seventy_plan %></td>
+        <td><%= reup.change_plan %></td>
+        <td><%= reup.admin_id %></td>
+        <td><%= reup.wallet_id %></td>
+        <td><%= link_to 'Show', reup %></td>
+        <td><%= link_to 'Edit', edit_reup_path(reup) %></td>
+        <td><%= link_to 'Destroy', reup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Reup', new_reup_path %>
