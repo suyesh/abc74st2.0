@@ -1,6 +1,6 @@
 class ReupsController < ApplicationController
   before_action :set_reup, only: [:show, :edit, :update, :destroy]
-
+#this belongs to simple reup
   # GET /reups
   # GET /reups.json
   def index

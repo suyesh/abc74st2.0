@@ -10,56 +10,50 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+<form class="form-horizontal">
+  <div class="fieldset">
     <%= f.label :sim_number %><br>
     <%= f.text_field :sim_number %>
   </div>
-  <div class="field">
+  <div class="fieldset">
     <%= f.label :zip_code %><br>
     <%= f.text_field :zip_code %>
   </div>
-  <div class="field">
+  <div class="fieldset">
     <%= f.label :email %><br>
     <%= f.text_field :email %>
   </div>
-  <div class="field">
+  <div class="fieldset">
     <%= f.label :first_name %><br>
     <%= f.text_field :first_name %>
   </div>
-  <div class="field">
+  <div class="control-group">
     <%= f.label :last_name %><br>
     <%= f.text_field :last_name %>
   </div>
-  <div class="field">
+  <div class="fieldset">
     <%= f.label :contact_number %><br>
     <%= f.text_field :contact_number %>
   </div>
-  <div class="field">
-    <%= f.label :fourty_plan %><br>
+  <div class="fieldset">
+    <%= f.label :forty %><br>
     <%= f.check_box :fourty_plan %>
   </div>
-  <div class="field">
+  <div class="fieldset">
     <%= f.label :fifty_plan %><br>
     <%= f.check_box :fifty_plan %>
   </div>
-  <div class="field">
+  <div class="fieldset">
     <%= f.label :real_paygo %><br>
     <%= f.check_box :real_paygo %>
   </div>
-  <div class="field">
+  <div class="fieldset">
     <%= f.label :paygo_amount %><br>
     <%= f.number_field :paygo_amount %>
   </div>
-  <div class="field">
-    <%= f.label :admin_id %><br>
-    <%= f.number_field :admin_id %>
-  </div>
-  <div class="field">
-    <%= f.label :wallet_id %><br>
-    <%= f.number_field :wallet_id %>
-  </div>
+ 
   <div class="actions">
-    <%= f.submit %>
+   <%= f.submit 'Activate', :class=>'btn btn-primary' %>
+   </form> 
   </div>
 <% end %>

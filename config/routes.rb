@@ -1,4 +1,10 @@
 Abc74st20::Application.routes.draw do
+  root :to => "interface#dasboard"
+  get "activations" => "interface#activations"
+
+  get "portins" => "interface#portins"
+
+  get "reups" => "interface#reups"
   resources :admins
 
   resources :reups

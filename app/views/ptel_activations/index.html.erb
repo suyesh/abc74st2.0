@@ -1,6 +1,7 @@
-<h1>Listing ptel_activations</h1>
+<h1>YOUR PTEL ACTIVATIONS</h1>
+<%= link_to 'New Ptel activation', new_ptel_activation_path, {:class=> "btn btn-success", :type => "button"} %>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Sim number</th>
@@ -8,13 +9,7 @@
       <th>Email</th>
       <th>First name</th>
       <th>Last name</th>
-      <th>Contact number</th>
-      <th>Fourty plan</th>
-      <th>Fifty plan</th>
-      <th>Real paygo</th>
-      <th>Paygo amount</th>
-      <th>Admin</th>
-      <th>Wallet</th>
+      
       <th></th>
       <th></th>
       <th></th>
@@ -29,13 +24,7 @@
         <td><%= ptel_activation.email %></td>
         <td><%= ptel_activation.first_name %></td>
         <td><%= ptel_activation.last_name %></td>
-        <td><%= ptel_activation.contact_number %></td>
-        <td><%= ptel_activation.fourty_plan %></td>
-        <td><%= ptel_activation.fifty_plan %></td>
-        <td><%= ptel_activation.real_paygo %></td>
-        <td><%= ptel_activation.paygo_amount %></td>
-        <td><%= ptel_activation.admin_id %></td>
-        <td><%= ptel_activation.wallet_id %></td>
+       
         <td><%= link_to 'Show', ptel_activation %></td>
         <td><%= link_to 'Edit', edit_ptel_activation_path(ptel_activation) %></td>
         <td><%= link_to 'Destroy', ptel_activation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -46,4 +35,4 @@
 
 <br>
 
-<%= link_to 'New Ptel activation', new_ptel_activation_path %>
+
